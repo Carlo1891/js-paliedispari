@@ -22,6 +22,12 @@ const userWord = prompt ('Scrivi una parola');
 
 console.log (userWord);
 
+function palindromes (userWord){
+    // La funzione deve riconoscere metà della composizione della parola, se uguale la parola sarà palindroma.
+    // for (let index = 0; index < userWord.length / 2; index++)
+
+}
+
 
 
 
