@@ -43,6 +43,10 @@ function generatorNumber (){
     return Math.floor(Math.random() * 5 + 1);
 };
 
+function isEven(e){
+    return e % 2 == 0;
+}
+
 // Sommiamo i due numeri
 
 const aINumber = generatorNumber();
@@ -51,8 +55,12 @@ const sumNumbers = userNumber + aINumber ;
 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 
-
-
+if (isEven (sumNumbers) && (choiseEvenOrOdd == 'pari')){
+    console.log ('WOWWWW Paga da bere!');
+} else if (!isEven (sumNumbers) && (choiseEvenOrOdd == 'dispari')){
+    console.log ('WOWWWW Paga da bere!')
+} else {
+    console.log ('Vabbe dai non ce pensa')
+}
 // Dichiariamo chi ha vinto.
 
-alert (windOrLose());
