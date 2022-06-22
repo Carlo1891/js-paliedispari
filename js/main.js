@@ -14,3 +14,27 @@
 // Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
 
 // PS : nell'esercizio di oggi cercate di usare funzioni scritte da Voi ed evitate scorciatoie facile (tipo reverse giusto per dirne una). REVERSE = MHALEEEH
+
+// Prima parte con Palindromi
+// La parola anche se al contrario deve essere uguale.
+
+const userWord = prompt ('Scrivi una parola');
+
+console.log (userWord);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Funzione per dopo, generatore numeri casuali.
+// function getRandom (min, max){
+//     return Math.floor(Math.random() * (max - min) + min);
+// }
