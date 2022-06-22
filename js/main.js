@@ -29,25 +29,33 @@
 // Seconda Parte
 
 // Pari e Dispari
-// L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
-// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
-// Sommiamo i due numeri
-// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
-// Dichiariamo chi ha vinto.
 
-userNumber = prompt ('Scegli un numero');
+// L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. (PROMPT!!!)
 
+userNumber = parseInt (prompt ('Scegli un numero da 1 a 5'));
 
-// funzione generatore
-function getRandom (min, max){
-    return Math.floor(Math.random() * (max - min) + min);
+// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione)
+
+function generatorNumber (){
+    return Math.floor(Math.random() * 5 + 1);
 };
 
-// funzione per sapere se è pari, altrimenti dispari.
-function sum (number){
-    if (number % 2 === 0){
-        return 'pari'
+// Sommiamo i due numeri
+
+const aINumber = generatorNumber();
+
+const sumNumbers = userNumber + aINumber ;
+
+
+// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+
+function sum (sumNumbers){
+    if (sumNumbers % 2 === 0){
+        return 'Pari, hai vinto amico mio!'
     } else {
-        return 'dispari'
+        return 'Dispari, eh niente sarà per un\'altra volta'
     }
 }
+// Dichiariamo chi ha vinto.
+
+alert (sum(sumNumbers));
