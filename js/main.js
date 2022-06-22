@@ -35,6 +35,19 @@
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
+userNumber = prompt ('Scegli un numero');
+
+
+// funzione generatore
 function getRandom (min, max){
     return Math.floor(Math.random() * (max - min) + min);
+};
+
+// funzione per sapere se è pari, altrimenti dispari.
+function sum (number){
+    if (number % 2 === 0){
+        return 'pari'
+    } else {
+        return 'dispari'
+    }
 }
