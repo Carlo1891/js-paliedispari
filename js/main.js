@@ -20,13 +20,18 @@
 
 const userWord = prompt ('Scrivi una parola');
 
-console.log (userWord);
-
 function palindromes (userWord){
     // La funzione deve riconoscere metà della composizione della parola, se uguale la parola sarà palindroma.
-    // for (let index = 0; index < userWord.length / 2; index++)
+    for (let index = 0; index < userWord.length / 2; index++)
+    // se la parola è uguale per tutta la sua metà, se non lo è
+    if (userWord [index] === userWord [userWord.length - 1 - index]){
+        console.log ('è una parola palindroma');
+    } else {
+        console.log ('Non è una parola palindroma');
+    }
+};
 
-}
+alert (palindromes(userWord));
 
 
 
